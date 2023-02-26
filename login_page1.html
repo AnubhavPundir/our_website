@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login Page</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/52fe77bba7.js" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <style>
+    body {
+      background-color: #191825;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center
+    }
+
+    .login-form {
+      width: 45%;
+      min-width: 300px;
+      margin: auto;
+      /* set left and right margins to "auto" to center the box */
+      margin-top: 8%;
+      /* add a top margin for vertical spacing */
+      font-size: 20px;
+    }
+
+    .login-form form {
+      margin-bottom: 15px;
+      background: #810CA8;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-group:not(:last-child) {
+      margin-bottom: 25px;
+      /* increase the margin between form groups */
+    }
+
+    .login-form h2 {
+      margin: 5% 0 10% 0;
+      color: #fff;
+      text-align: center;
+    }
+
+    .form-control,
+    .btn {
+      min-height: 38px;
+      border-radius: 10px;
+    }
+
+    .btn {
+      margin-top: 50px;
+      /* add some vertical spacing between the button and the password field */
+      padding: 2% 25%;
+    }
+
+    .login-form .btn {
+      min-height: 30px;
+      border-radius: 18px;
+      /* set border-radius to half of min-height */
+      font-size: 18px;
+
+      background-color: #c038ff;
+      border-color: #c038ff;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+      /* add a subtle shadow */
+      transition: all 0.20s ease-in-out;
+      /* add a transition effect */
+    }
+
+    .login-form .btn:hover {
+      background-color: #191825;
+      border-color: #a70eed;
+      transform: translateY(-3.5px);
+      /* make the button pop up slightly */
+    }
+
+    #show-password {
+      margin: 10px 0;
+      font-size: 10px
+    }
+
+    #random-text-hint {
+      margin: 5px;
+      font-size: 17px;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-form">
+    <form action="main.html">
+      <h2 class="text-center" id="random-text"></h2>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Username" required="required">
+      </div>
+
+      <div class="form-group">
+        <input type="password" class="form-control" id="myInput" placeholder="Password -> 15 sec tick tock " required="required">
+        <input type="checkbox" id="show-password" onclick="myFunction()"> View password
+      </div>
+      <h2 class="text-center" id="random-text-hint"></h2>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block">Let's Go😉</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="../Our_website/login.js"></script>
+
+
+</body>
+
+</html>
